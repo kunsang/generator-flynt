@@ -1,44 +1,8 @@
-import $ from 'jquery'
+// <%= nameUpperCamelCase %>
+import { buildRefs } from '@/assets/scripts/helpers.js'
 
-class <%= nameUpperCamelCase %> extends window.HTMLDivElement {
-  constructor (...args) {
-    const self = super(...args)
-    self.init()
-    return self
-  }
+export default function (el) {
+  const refs = buildRefs(el)
 
-  init () {
-    this.$ = $(this)
-    this.props = this.getInitialProps()
-    this.state = this.getInitialState()
-    this.resolveElements()
-    this.bindFunctions()
-    this.bindEvents()
-  }
-
-  getInitialProps () {
-    let data = {}
-    // try {
-    //   data = JSON.parse($('script[type="application/json"]', this).text())
-    // } catch (e) {}
-    return data
-  }
-
-  getInitialState () {
-    return {}
-  }
-
-  resolveElements () {
-  }
-
-  bindFunctions () {
-  }
-
-  bindEvents () {
-  }
-
-  connectedCallback () {
-  }
+  return
 }
-
-window.customElements.define('flynt-<%= nameKebabCase %>', <%= nameUpperCamelCase %>, { extends: 'div' })

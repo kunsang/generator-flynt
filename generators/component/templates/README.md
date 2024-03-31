@@ -1,13 +1,3 @@
-Title: <%= namePretty %>
+# <%= namePretty %>
 
----
-
-Category: <%= category %>
-
----
-
-Tags: untagged
-
----
-
-Text: No description.
+Description.

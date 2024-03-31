@@ -5,11 +5,11 @@ namespace Flynt\Components\<%= nameUpperCamelCase %>;
 use Flynt\FieldVariables;
 use Flynt\Utils\Options;
 
-add_filter('Flynt/addComponentData?name=<%= nameUpperCamelCase %>', function ($data) {
+add_filter('Flynt/addComponentData?name=<%= nameUpperCamelCase %>', function (array $data): array {
     return $data;
 });
 
-function getACFLayout()
+function getACFLayout(): array
 {
     return [
         'name' => '<%= nameLowerCamelCase %>',

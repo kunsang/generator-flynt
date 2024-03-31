@@ -1,6 +1,8 @@
-<div class="flyntComponent componentSpacing {{ options.theme }}" is="flynt-<%= nameKebabCase %>">
+<flynt-component name="<%= nameUpperCamelCase %>" load:on="visible" class="componentSpacing" {{ options.theme ? 'data-theme="' ~ options.theme ~ '"' }}>
   {# <script type="application/json">{{ jsonData|json_encode }}</script> #}
-  <div class="container centerMaxWidthContainer">
+  <div class="container" data-flow="layout">
     <h1>Component: <%= namePretty %></h1>
   </div>
-</div>
+</flynt-component>
+  
+
