@@ -35,6 +35,7 @@ function getACFLayout(): array
                 'type' => 'group',
                 'layout' => 'row',
                 'sub_fields' => [
+                    FieldVariables\getAdminTitle(),
                     FieldVariables\getTheme()
                 ],
             ],
