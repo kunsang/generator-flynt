@@ -20,13 +20,15 @@ The node version used should be `^10`. If you use a node version manager (e.g. [
 First install Yeoman:
 
 ```bash
-$ npm i -g yo
+$ npm install -g yo@4.3.1
 ```
+
+Clone this repo
 
 Install the generator:
 
 ```bash
-$ npm i -g @flyntwp/generator-flynt
+$ npm i -g
 ```
 
 Otherwise you can use yarn as well:
